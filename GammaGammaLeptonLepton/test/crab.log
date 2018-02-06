@@ -1,0 +1,453 @@
+DEBUG 2018-02-02 00:22:26,379: 	 Executing command: 'submit'
+DEBUG 2018-02-02 00:22:26,379: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 00:22:26,384: 	 Checking credentials
+DEBUG 2018-02-02 00:22:26,385: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 00:22:26,385: 	 Getting proxy life time left
+DEBUG 2018-02-02 00:22:26,990: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 86383
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 00:22:27,597: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 86382
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 00:22:27,597: 	 Proxy valid for 23:59:43 hours
+INFO 2018-02-02 00:22:27,597: 	 Will use CRAB configuration file crab_runner.py
+DEBUG 2018-02-02 00:22:27,598: 	 Loading CRAB configuration file.
+DEBUG 2018-02-02 00:22:27,599: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-02-02 00:22:27,599: 	 Working area '/afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC/crab_2017RunC' already exists 
+Please change the requestName in the config file
+ERROR 2018-02-02 00:22:27,599: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 302, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 396, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC/crab_2017RunC' already exists 
+Please change the requestName in the config file
+DEBUG 2018-02-02 01:03:39,881: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:03:39,881: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+ERROR 2018-02-02 01:03:39,882: 	 Error: all is not a valid CRAB project directory.
+ERROR 2018-02-02 01:03:39,882: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 257, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 63, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 566, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: all is not a valid CRAB project directory.
+DEBUG 2018-02-02 01:03:51,330: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:03:51,330: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:03:51,339: 	 Checking credentials
+DEBUG 2018-02-02 01:03:51,340: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:03:51,340: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:03:51,947: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83898
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:03:52,552: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83897
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:03:52,553: 	 Proxy valid for 23:18:18 hours
+ERROR 2018-02-02 01:03:52,553: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+ERROR 2018-02-02 01:03:52,554: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+DEBUG 2018-02-02 01:03:56,535: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:03:56,535: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:03:56,542: 	 Checking credentials
+DEBUG 2018-02-02 01:03:56,542: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:03:56,542: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:03:57,046: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83892
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:03:57,652: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83892
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:03:57,652: 	 Proxy valid for 23:18:12 hours
+ERROR 2018-02-02 01:03:57,653: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+ERROR 2018-02-02 01:03:57,653: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+DEBUG 2018-02-02 01:04:01,107: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:04:01,107: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+ERROR 2018-02-02 01:04:01,108: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2018-02-02 01:04:01,108: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 257, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 63, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 562, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2018-02-02 01:04:15,355: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:04:15,355: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:04:15,361: 	 Checking credentials
+DEBUG 2018-02-02 01:04:15,361: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:04:15,361: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:04:15,865: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83874
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:04:16,472: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83873
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:04:16,472: 	 Proxy valid for 23:17:54 hours
+ERROR 2018-02-02 01:04:16,472: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+ERROR 2018-02-02 01:04:16,473: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+DEBUG 2018-02-02 01:04:18,888: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:04:18,888: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:04:18,895: 	 Checking credentials
+DEBUG 2018-02-02 01:04:18,895: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:04:18,895: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:04:19,399: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83870
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:04:19,903: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83870
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:04:19,903: 	 Proxy valid for 23:17:50 hours
+ERROR 2018-02-02 01:04:19,904: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+ERROR 2018-02-02 01:04:19,904: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/2017RunC_v3
+DEBUG 2018-02-02 01:04:34,821: 	 Executing command: 'kill'
+DEBUG 2018-02-02 01:04:34,823: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+ERROR 2018-02-02 01:04:34,824: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2018-02-02 01:04:34,824: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 257, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 63, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 562, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2018-02-02 01:06:48,639: 	 Executing command: 'checkwrite'
+DEBUG 2018-02-02 01:06:48,639: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:06:48,646: 	 Checking credentials
+DEBUG 2018-02-02 01:06:48,647: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:06:48,647: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:06:49,255: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83720
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:49,860: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83720
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:49,861: 	 Proxy valid for 23:15:20 hours
+DEBUG 2018-02-02 01:06:49,968: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kshcheli/CN=749072/CN=Ksenia Shchelina
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:49,969: 	 Checking credentials
+DEBUG 2018-02-02 01:06:49,969: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:06:49,969: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:06:50,574: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83719
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:51,088: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83718
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:51,088: 	 Proxy valid for 23:15:19 hours
+DEBUG 2018-02-02 01:06:51,693: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u48535 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:06:51,694: 	 Command use: checkwrite
+DEBUG 2018-02-02 01:06:51,694: 	 Options use: ['--site=T2_CH_CERN', '--lfn=/store/user/kshcheli/WW2017LeptonCheck/']
+DEBUG 2018-02-02 01:06:51,694: 	 Instance is None
+DEBUG 2018-02-02 01:06:51,694: 	 Server base url is None
+DEBUG 2018-02-02 01:06:51,699: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u48535', 'maxcachereuse': 24.0, 'cachepath': '/tmp/kshcheli/.wmcore_cache_uSFOIB/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u48535', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u48535', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7f196be890d0>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/kshcheli/.wmcore_cache_uSFOIB/cmsweb.cern.ch', 'cert': '/tmp/x509up_u48535', 'timeout': 300, 'req_cache_path': '/tmp/kshcheli/.wmcore_cache_uSFOIB/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7f196be6e550>}, 'logger': <logging.Logger object at 0x7f196be6e550>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/kshcheli/.wmcore_cache_uSFOIB/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2018-02-02 01:06:51,699: 	 Validating LFN /store/user/kshcheli/WW2017LeptonCheck/...
+INFO 2018-02-02 01:06:51,699: 	 Retrieving DN from proxy...
+INFO 2018-02-02 01:06:52,961: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kshcheli/CN=749072/CN=Ksenia Shchelina
+INFO 2018-02-02 01:06:52,962: 	 Retrieving username from SiteDB...
+INFO 2018-02-02 01:06:56,011: 	 Username is: kshcheli
+INFO 2018-02-02 01:06:56,011: 	 LFN /store/user/kshcheli/WW2017LeptonCheck/ is valid.
+INFO 2018-02-02 01:06:56,038: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2018-02-02 01:06:56,038: 	 Will check write permission in /store/user/kshcheli/WW2017LeptonCheck/ on site T2_CH_CERN
+DEBUG 2018-02-02 01:06:56,042: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T2_CH_CERN'], 'custodial': 'n', 'lfn': ['/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/crab3checkwrite_20180202_010656.tmp'], 'protocol': 'srmv2'}
+INFO 2018-02-02 01:06:56,951: 	 
+Attempting to create (dummy) directory crab3checkwrite_20180202_010656 and copy (dummy) file crab3checkwrite_20180202_010656.tmp to /store/user/kshcheli/WW2017LeptonCheck/
+
+INFO 2018-02-02 01:06:56,954: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u48535 gfal-copy -p -v -t 180 file:///afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/crab3checkwrite_20180202_010656.tmp 'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/crab3checkwrite_20180202_010656.tmp'
+INFO 2018-02-02 01:06:56,955: 	 Please wait...
+INFO 2018-02-02 01:06:57,535: 	 
+Successfully created directory crab3checkwrite_20180202_010656 and copied file crab3checkwrite_20180202_010656.tmp to /store/user/kshcheli/WW2017LeptonCheck/
+INFO 2018-02-02 01:06:57,535: 	 
+Attempting to delete file gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/crab3checkwrite_20180202_010656.tmp
+
+INFO 2018-02-02 01:06:57,536: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u48535 gfal-rm -v -t 180 'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/crab3checkwrite_20180202_010656.tmp'
+INFO 2018-02-02 01:06:57,536: 	 Please wait...
+INFO 2018-02-02 01:06:57,786: 	 
+Successfully deleted file gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/crab3checkwrite_20180202_010656.tmp
+INFO 2018-02-02 01:06:57,787: 	 
+Attempting to delete directory gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/
+
+INFO 2018-02-02 01:06:57,787: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u48535 gfal-rm -r -v -t 180 'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/'
+INFO 2018-02-02 01:06:57,787: 	 Please wait...
+INFO 2018-02-02 01:06:58,083: 	 
+Successfully deleted directory gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/kshcheli/WW2017LeptonCheck//crab3checkwrite_20180202_010656/
+INFO 2018-02-02 01:06:58,093: 	 
+Checkwrite Result:
+INFO 2018-02-02 01:06:58,093: 	 Success: Able to write in /store/user/kshcheli/WW2017LeptonCheck/ on site T2_CH_CERN
+DEBUG 2018-02-02 01:07:17,373: 	 Executing command: 'checkwrite'
+DEBUG 2018-02-02 01:07:17,373: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-02 01:07:17,381: 	 Checking credentials
+DEBUG 2018-02-02 01:07:17,381: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:07:17,381: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:07:17,987: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83692
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:18,694: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83691
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:18,695: 	 Proxy valid for 23:14:52 hours
+DEBUG 2018-02-02 01:07:18,803: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kshcheli/CN=749072/CN=Ksenia Shchelina
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:18,803: 	 Checking credentials
+DEBUG 2018-02-02 01:07:18,803: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-02 01:07:18,803: 	 Getting proxy life time left
+DEBUG 2018-02-02 01:07:19,409: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83690
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:19,914: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83690
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:19,914: 	 Proxy valid for 23:14:50 hours
+DEBUG 2018-02-02 01:07:20,520: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u48535 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-02 01:07:20,521: 	 Command use: checkwrite
+DEBUG 2018-02-02 01:07:20,521: 	 Options use: ['--site=T2_CH_CERN', '--lfn=/store/user/k/kshcheli/WW2017LeptonCheck/']
+DEBUG 2018-02-02 01:07:20,521: 	 Instance is None
+DEBUG 2018-02-02 01:07:20,521: 	 Server base url is None
+DEBUG 2018-02-02 01:07:20,526: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u48535', 'maxcachereuse': 24.0, 'cachepath': '/tmp/kshcheli/.wmcore_cache_byeWni/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u48535', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u48535', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7f2afa53e0d0>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/kshcheli/.wmcore_cache_byeWni/cmsweb.cern.ch', 'cert': '/tmp/x509up_u48535', 'timeout': 300, 'req_cache_path': '/tmp/kshcheli/.wmcore_cache_byeWni/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7f2afa523550>}, 'logger': <logging.Logger object at 0x7f2afa523550>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/kshcheli/.wmcore_cache_byeWni/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2018-02-02 01:07:20,526: 	 Validating LFN /store/user/k/kshcheli/WW2017LeptonCheck/...
+INFO 2018-02-02 01:07:20,526: 	 Retrieving DN from proxy...
+INFO 2018-02-02 01:07:21,763: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kshcheli/CN=749072/CN=Ksenia Shchelina
+INFO 2018-02-02 01:07:21,764: 	 Retrieving username from SiteDB...
+INFO 2018-02-02 01:07:24,770: 	 Username is: kshcheli
+INFO 2018-02-02 01:07:24,770: 	 Refusing to check write permission in /store/user/k/kshcheli/WW2017LeptonCheck/, because this is not an allowed LFN for stageout.
+The LFN must start with either '/store/user/<username>/' or '/store/group/<groupname>/' (or '/store/local/<something>/' if publication is off), where username is your username as registered in SiteDB (i.e. the username of your CERN primary account).
+LFN /store/user/k/kshcheli/WW2017LeptonCheck/ is not valid.
+DEBUG 2018-02-03 01:27:31,299: 	 Executing command: 'submit'
+DEBUG 2018-02-03 01:27:31,299: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-03 01:27:31,356: 	 Checking credentials
+DEBUG 2018-02-03 01:27:31,356: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-03 01:27:31,357: 	 Getting proxy life time left
+DEBUG 2018-02-03 01:27:31,962: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 43149
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-03 01:27:32,467: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-03 01:27:32,467: 	 Proxy valid for 11:59:09 hours
+ERROR 2018-02-03 01:27:32,467: 	 CRAB configuration file crab_analysis_UATree.py not found.
+ERROR 2018-02-03 01:27:32,467: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 298, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab_analysis_UATree.py not found.
+DEBUG 2018-02-04 01:34:05,020: 	 Executing command: 'kill'
+DEBUG 2018-02-04 01:34:05,020: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-04 01:34:05,052: 	 Checking credentials
+DEBUG 2018-02-04 01:34:05,053: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-04 01:34:05,053: 	 Getting proxy life time left
+DEBUG 2018-02-04 01:34:06,362: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83741
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-04 01:34:07,671: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83739
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-04 01:34:07,672: 	 Proxy valid for 23:15:41 hours
+ERROR 2018-02-04 01:34:07,673: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/DY2017
+ERROR 2018-02-04 01:34:07,673: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/DY2017
+DEBUG 2018-02-04 01:36:27,853: 	 Executing command: 'submit'
+DEBUG 2018-02-04 01:36:27,854: 	 Found CRAB cache file /afs/cern.ch/user/k/kshcheli/.crab3
+DEBUG 2018-02-04 01:36:27,869: 	 Checking credentials
+DEBUG 2018-02-04 01:36:27,870: 	 Found proxy file /tmp/x509up_u48535
+DEBUG 2018-02-04 01:36:27,871: 	 Getting proxy life time left
+DEBUG 2018-02-04 01:36:29,180: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -timeleft
+ output : 83598
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-04 01:36:30,389: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u48535 -actimeleft
+ output : 83596
+
+ error: 
+ retcode : 0
+DEBUG 2018-02-04 01:36:30,390: 	 Proxy valid for 23:13:18 hours
+INFO 2018-02-04 01:36:30,391: 	 Will use CRAB configuration file crab_runner.py
+DEBUG 2018-02-04 01:36:30,391: 	 Loading CRAB configuration file.
+DEBUG 2018-02-04 01:36:30,403: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-02-04 01:36:30,403: 	 Working area '/afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/DY2017/crab_DY2017' already exists 
+Please change the requestName in the config file
+ERROR 2018-02-04 01:36:30,404: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 302, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 396, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/k/kshcheli/private/WW17/LL/CMSSW_9_4_0/src/DiffractiveForwardAnalysis/GammaGammaLeptonLepton/test/DY2017/crab_DY2017' already exists 
+Please change the requestName in the config file
